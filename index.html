@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Testing HTML</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function textchange(){
+                document.getElementById("text").innerHTML="Text Changed."
+            }
+            function colourchange(){
+                document.getElementById("text").style.color="brown"
+            }
+            function imagechange(){
+                document.getElementById("image").src="2.jpg"
+                document.getElementById("image").width="1914"
+                document.getElementById("image").height="1566"
+            }
+        </script>
+    </head>
+
+    <body>
+        testing
+        <h1> Testing HTML</h1>
+        <hr>
+        <button onclick="textchange()"> Change Text </button>
+        <button onclick="colourchange()">Change Colour</button>
+        <button onclick="imagechange()">Change Image</button>
+        <br>
+        <a href="https://www.w3schools.com">This is a link</a>
+        <hr>
+        <img id= "image" src="1.jpg" alt="Testing" width="1200" height="580">
+        <p id="text"> You can extend VS Code's HTML support through a declarative custom data format.<br> 
+            By setting html.customData to a list of JSON files following the custom data format, 
+            you can enhance VS Code's understanding of new HTML tags, attributes and attribute values. 
+            VS Code will then offer language support such as completion & hover information for the provided tags, attributes and attribute values.</p>
+    
+    </body>
+</html>
